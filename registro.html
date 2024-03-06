@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./registro.html">
-  <title>Registro</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/registro.css" />
+		<title>Registro</title>
+	</head>
+	<body>
+		<div class="main-page-container">
+			<div class="form-container">
+				<h1>Crear Cuenta</h1>
+				<form action="POST" name="create-account-form" id="create-account-form">
+					<input type="text" name="text" id="text" placeholder="Nombre" />
+					<input
+						type="number"
+						name="number"
+						id="number"
+						placeholder="Número de teléfono" />
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Correo Electrónico" />
+					<input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="Contraseña" />
+					<div class="accept-conditions-container">
+						<input
+							type="checkbox"
+							name="accept-conditions-checkbox"
+							id="accept-conditions-checkbox" />
+						<label for="accept-conditions-checkbox"
+							>Acepto Terminos, Condiciones y Política de Privacidad</label
+						>
+					</div>
+					<input type="submit" name="submit" id="submit" value="Crear Cuenta" />
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
