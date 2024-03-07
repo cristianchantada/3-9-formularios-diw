@@ -1,10 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/perfil.css" />
 		<title>Perfil</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="main-page-container">
+			<div class="main-profile-container">
+				<div class="form-header-container">
+					<img src="" alt="" />
+					<h1>Perfil</h1>
+				</div>
+				<form action="POST">
+					<div class="form-main-fields-container">
+						<div class="form-data-container">
+							<label for="birth-date">Fecha de nacimiento:</label>
+							<input class="char-input" type="date" id="birth-date" name="birth-date" />
+							<label for="file">Ingrese su foto:</label>
+							<input type="file" id="photo" name="photo" />
+							<label class="char-input" for="nationality">Nacionalidad:</label>
+							<input type="text" id="nationality" name="nationality" />
+							<label for="favourite-color">Color favorito:</label>
+							<input type="color" id="favourite-color" name="favourite-color" />
+							<label for="">Sexo:</label>
+							<div class="input-sex-container">
+								<input type="radio" id="male" name="gender" value="male" />
+								<label for="male"> Masculino</label>
+								<input type="radio" id="female" name="gender" value="female" />
+								<label for="female"> Femenino</label>
+							</div>
+							<label class="char-input" for="age">Edad:</label>
+							<input type="number" id="age" name="age" />
+							<label for="address">Dirección</label>
+							<textarea
+								name="address"
+								id="address"
+								cols="25"
+								rows="5"></textarea>
+						</div>
+						<div class="form-topic-container">
+							<p>Selecciona un tema de interés:</p>
+							<div class="topic-radio-container">
+								<label
+									><input type="radio" name="tema" value="ciencia" />
+									ciencia</label
+								>
+								<label
+									><input type="radio" name="tema" value="arte" /> arte</label
+								>
+								<label
+									><input type="radio" name="tema" value="literatura" />
+									literatura</label
+								>
+								<label
+									><input type="radio" name="tema" value="tecnología" />
+									tecnología</label
+								>
+								<label
+									><input type="radio" name="tema" value="música" />
+									música</label
+								>
+								<label
+									><input type="radio" name="tema" value="informática" />
+									informática</label
+								>
+							</div>
+							<div class="topic-select-container">
+								<p>Libros y artículos de su interés:</p>
+								<select name="books-articles" multiple>
+									<option value="java">Java</option>
+									<option value="python">Python</option>
+									<option value="javascript">JavaScript</option>
+									<option value="csharp">C#</option>
+									<option value="cpp">C++</option>
+									<option value="php">PHP</option>
+									<option value="ruby">Ruby</option>
+									<option value="swift">Swift</option>
+									<option value="go">Go</option>
+									<option value="typescript">TypeScript</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-hobbies-container">
+							<p>Elija su pasatiempo</p>
+							<div class="checkboxes-container">
+								<input type="checkbox" id="sport" name="sport" />
+								<label for="sport">Deporte</label>
+								<input type="checkbox" id="music" name="music" />
+								<label for="music">Música</label>
+								<input type="checkbox" id="reading" name="reading" />
+								<label for="reading">Lectura</label>
+								<input type="checkbox" id="fishing" name="fishing" />
+								<label for="fishing">Pesca</label>
+								<input type="checkbox" id="walking" name="walking" />
+								<label for="walking">Pasear</label>
+								<input type="checkbox" id="cinema" name="cinema" />
+								<label for="cinema">Cine</label>
+							</div>
+						</div>
+					</div>
+					<input type="submit" value="Enviar información" />
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
