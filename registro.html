@@ -9,32 +9,27 @@
 	<body>
 		<div class="main-page-container">
 			<div class="form-container">
-				<h1>Crear Cuenta</h1>
+				<h1>Crear Cuenta</h1> 
 				<form action="POST" name="create-account-form" id="create-account-form">
-					<input type="text" name="text" id="text" placeholder="Nombre" />
-					<input
-						type="number"
-						name="number"
-						id="number"
-						placeholder="Número de teléfono" />
-					<input
-						type="email"
-						name="email"
-						id="email"
-						placeholder="Correo Electrónico" />
-					<input
-						type="password"
-						name="password"
-						id="password"
-						placeholder="Contraseña" />
+					<div class="input-container">
+						<img src="imgs/personIcon.png" alt="" />
+						<input type="text" name="text" id="text" placeholder="Nombre" />
+					</div>
+					<div class="input-container">
+						<img src="imgs/phoneIcon.png" alt="" />
+						<input type="number" name="number" id="number" placeholder="Número de teléfono" />
+					</div>
+					<div class="input-container">
+						<img src="imgs/emailIcon.png" alt="" />
+						<input type="email" name="email" id="email" placeholder="Correo Electrónico" />
+					</div>
+					<div class="input-container">
+						<img id="password-icon" src="imgs/passwordIcon.png" alt="" />
+						<input type="password" name="password" id="password" placeholder="Contraseña" />
+					</div>
 					<div class="accept-conditions-container">
-						<input
-							type="checkbox"
-							name="accept-conditions-checkbox"
-							id="accept-conditions-checkbox" />
-						<label for="accept-conditions-checkbox"
-							>Acepto Terminos, Condiciones y Política de Privacidad</label
-						>
+						<input type="checkbox" name="accept-conditions-checkbox" id="accept-conditions-checkbox" />
+						<label for="accept-conditions-checkbox">Acepto Terminos, Condiciones y Política de Privacidad</label>
 					</div>
 					<input type="submit" name="submit" id="submit" value="Crear Cuenta" />
 				</form>
