@@ -1,156 +1,201 @@
 body {
-  background-color: #DCDCDC;
-  color: white;
+	background-color: #fefefe;
+	color: white;
 }
 
 .main-page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .main-profile-container {
-  display: grid;
-  justify-items: center;
-  grid-template-rows: 1fr 4fr;
-  background-color: #4C4C4C;
-  border-radius: 10px;
-  max-width: 1300px;
+	display: grid;
+	justify-items: center;
+	grid-template-rows: 1fr 4fr;
+	background-color: #4c4c4c;
+	border-radius: 15px;
+	max-width: 1300px;
+	box-shadow: 
+    -30px -30px 30px rgba(0, 0, 0, 0.1), 
+    30px -30px 30px rgba(0, 0, 0, 0.1), 
+    30px 30px 30px rgba(0, 0, 0, 0.1),
+		-30px 30px 30px rgba(0, 0, 0, 0.1);
 }
 
 .main-profile-container > * {
-  width: 95%;
+	width: 95%;
 }
 
 .form-header-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 
+	z-index: 1;
+}
+
+.form-header-container > * {
+	margin: 10px;
+}
+
+#profile-photo {
+	width: 60px;
+	border-radius: 7px;
+	align-self: flex-start;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+	display: grid;
+	grid-template-rows: 5fr 1fr;
 }
 
 /* Main fields */
 
-.form-main-fields-container{
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  column-gap: 15px;
+.form-main-fields-container {
+	display: grid;
+	grid-template-columns: 1.4fr 1fr 1fr;
+	column-gap: 15px;
 }
 
 .form-main-fields-container > div {
-  padding: 15px;
+	padding: 15px;
 }
 
 /* Data form container */
 
 .form-data-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  border: solid 1px white;
-  border-radius: 10px;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	border: solid 1px white;
+	border-radius: 10px;
+}
+
+.form-data-container p {
+	position: absolute;
+	top: -30px;
+	left: 4%;
+	background-color: #4c4c4c;
+	padding: 5px 10px 0px 10px;
+	z-index: 2;
 }
 
 .form-data-container > * {
-  padding: 3px;
+	padding: 3px;
 }
 
-.form-data-container > input{
-  height: 15px;
+.form-data-container > input {
+	height: 15px;
 }
 
-.form-data-container > input[type=color] {
-  height: 25px;
-  padding: 0.4px;
+.form-data-container > input[type="color"] {
+	height: 25px;
+	padding: 0.4px;
 }
 
-.input-sex-container{
-  display: grid;
-  grid-template-columns: 25px auto;
-  justify-items: left;
-  
+.input-sex-container {
+	display: grid;
+	grid-template-columns: 25px auto;
+	justify-items: left;
 }
 
 .input-sex-container > input {
-  height: 13px;
+	height: 13px;
 }
 
 .input-sex-container > label {
-  height: 13px;
+	height: 13px;
 }
 
-.form-data-container > input[type=date] {
-  width: 50%;
+.form-data-container > input[type="date"] {
+	width: 50%;
 }
 
-.form-data-container > input[type=text] {
-  width: 65%;
+.form-data-container > input[type="text"] {
+	width: 65%;
 }
 
-.form-data-container > input[type=number] {
-  width: 20%;
+.form-data-container > input[type="number"] {
+	width: 20%;
 }
 
 .form-data-container > textarea {
-  width: 80%;
+	width: 80%;
 }
-
 
 /* Topic form container */
 
 .form-topic-container {
-  display: flex;
-  flex-direction: column;
-  border: solid 1px white;
-  border-radius: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border: solid 1px white;
+	border-radius: 10px;
+}
+
+#topic {
+	position: absolute;
+	top: -30px;
+	left: 4%;
+	background-color: #4c4c4c;
+	padding: 5px 10px;
+	z-index: 2;
 }
 
 .topic-radio-container {
-  display: grid;
+	display: grid;
 }
 
 select {
-  width: 70%;
+	width: 70%;
 }
 
 /* Hobbies form container */
 
-.form-hobbies-container{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: solid 1px white;
-  border-radius: 10px;
+.form-hobbies-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	border: solid 1px white;
+	border-radius: 10px;
+}
+
+#hobbies-p {
+	position: absolute;
+	top: -30px;
+	left: 4%;
+	background-color: #4c4c4c;
+	padding: 5px 10px;
+	z-index: 2;
 }
 
 .checkboxes-container {
-  display: grid;
-  grid-template-columns: auto auto;
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 /* form submit button */
 
 input[type="submit"] {
-	border-radius: 15px;
 	color: white;
 	background-color: #a4b355;
-	align-self: end;
-  width: 150px;
-  height: 35px;
-  margin-right: 70px;
-  margin-top: 3px;
+	justify-self: end;
+	width: 150px;
+	height: 35px;
+	margin-right: 70px;
+	margin-top: 3px;
+	border-radius: 15px;
+	border-right: rgb(131, 127, 127) solid 2px;
+	border-bottom: rgb(131, 127, 127) solid 2px;
+	border-left: white solid 2px;
+	border-top: white solid 2px;
 }
 
 input[type="submit"]:hover {
-    background-color: #8c9d3b;
+	background-color: #8c9d3b;
 }
-
-
-

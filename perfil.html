@@ -10,12 +10,14 @@
 		<div class="main-page-container">
 			<div class="main-profile-container">
 				<div class="form-header-container">
-					<img src="" alt="" />
+					<img id="profile-photo" src="imgs/profilePhoto.png" alt="foto de perfil" />
 					<h1>Perfil</h1>
 				</div>
 				<form action="POST">
-					<div class="form-main-fields-container">
+					<div class="form-main-fields-container">	
 						<div class="form-data-container">
+							<p>Datos</p>
+							<p></p>
 							<label for="birth-date">Fecha de nacimiento:</label>
 							<input class="char-input" type="date" id="birth-date" name="birth-date" />
 							<label for="file">Ingrese su foto:</label>
@@ -41,7 +43,8 @@
 								rows="5"></textarea>
 						</div>
 						<div class="form-topic-container">
-							<p>Selecciona un tema de interés:</p>
+							<p id="topic">Temas</p>
+							<p>Selecciona tema de interés:</p>
 							<div class="topic-radio-container">
 								<label
 									><input type="radio" name="tema" value="ciencia" />
@@ -84,6 +87,7 @@
 							</div>
 						</div>
 						<div class="form-hobbies-container">
+							<p id="hobbies-p">Aficiones</p>
 							<p>Elija su pasatiempo</p>
 							<div class="checkboxes-container">
 								<input type="checkbox" id="sport" name="sport" />
